@@ -10,6 +10,7 @@ import { createStore, compose, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import reducers from './reducers'
+import Protected from './components/Protected';
 const store = createStore(reducers, compose(applyMiddleware(thunk)))
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,7 +21,7 @@ root.render(
       <Routes>
         <Route path='/' element={<LandingPage/>}>
         </Route>
-          <Route path='/cars' element={<SearchPage/>}>
+          <Route path='/cars' element={<Protected><SearchPage/></Protected>}>
         </Route>
       </Routes>
     </BrowserRouter>
