@@ -1,0 +1,28 @@
+import React from "react";
+import FindCar from "../FindCar";
+
+
+
+function Hero(){
+    return(
+        <section>
+            <div className="jumbotron" id="section-1">
+            <div className="row" style={{marginTop:"100px"}}>
+                <div className="col-lg-6 col-md-6 mb-5">
+                <h1>Sewa & Rental Mobil Terbaik di kawasan Lumajang</h1>
+                <p className="mt-5">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga
+                    terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+                <a href="/cars" className="btn btn-success">Mulai Sewa Mobil</a>
+                </div>
+                <div className="col-lg-6 col-md-6">
+                <div id="mobil">
+                    <img src="./images/car.png" alt="" id="mobil"/>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    )
+}
+
+export default Hero

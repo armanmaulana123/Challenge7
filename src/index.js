@@ -3,11 +3,28 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'; 
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { LandingPage, SearchPage } from './components';
+import { createStore, compose, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
+import reducers from './reducers'
+const store = createStore(reducers, compose(applyMiddleware(thunk)))
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+        <Provider store={store}>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<LandingPage/>}>
+        </Route>
+          <Route path='/cars' element={<SearchPage/>}>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+        </Provider>
   </React.StrictMode>
 );
 
