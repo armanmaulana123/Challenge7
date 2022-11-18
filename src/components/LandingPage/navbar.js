@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 // import useHistory from "react-router-dom";
 // import { Navigate } from 'react-router-dom';
-import { GoogleLogin } from 'react-google-login';
+import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 
 async function doLoginWithGoogle(token) {
   // Sesuaikan endpoint
@@ -87,13 +87,16 @@ const Navbar = () =>{
                 <li className="nav-item">
                 <form className="form-inline my-2 my-lg-0">
                 {!isLoggedIn ? (
-                    <GoogleLogin 
-                    clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
-                    buttonText="Login with Google"
-                    onSuccess={handleSuccessGoogle}
-                    onFailure={handleFailureGoogle}
-                    cookiePolicy={'single_host_origin'}
-                    />
+                    <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}>
+                          <GoogleLogin
+                              onSuccess={credentialResponse => {
+                                haldleSuccessGoogle(credentialResponse)
+                              }}
+                              onError={() => {
+                                haldleFailureGoogle("error Login")
+                              }}
+                            />
+                        </GoogleOAuthProvider>
                 ) : (
                     <input type="submit" className="btn btn-outline-danger" value="Logout" onClick={handleLogout}></input>
                     // <p>test</p>

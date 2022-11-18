@@ -1593,6 +1593,11 @@
   dependencies:
     "@babel/runtime" "^7.6.2"
 
+"@react-oauth/google@^0.5.0":
+  "integrity" "sha512-3bS+DmKjynzdn3dwdNFdiIybRTOhF2siVI+gjSZrsYI52oWKVqb8mkxsV3YbU/EnL/c5g9zBinGcbzTNUHq/eg=="
+  "resolved" "https://registry.npmjs.org/@react-oauth/google/-/google-0.5.0.tgz"
+  "version" "0.5.0"
+
 "@remix-run/router@1.0.3":
   "integrity" "sha512-ceuyTSs7PZ/tQqi19YZNBc5X7kj1f8p+4DIyrcIYFY9h+hd1OKm4RqtiWldR9eGEvIiJfsqwM4BsuCtRIuEw6Q=="
   "resolved" "https://registry.npmjs.org/@remix-run/router/-/router-1.0.3.tgz"
@@ -7694,7 +7699,7 @@
     "strip-ansi" "^6.0.1"
     "text-table" "^0.2.0"
 
-"react-dom@^15.4.2", "react-dom@^16 || ^17", "react-dom@^16.8 || ^17.0 || ^18.0", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>=16.14.0", "react-dom@>=16.6.0", "react-dom@>=16.8":
+"react-dom@^15.4.2", "react-dom@^16 || ^17", "react-dom@^16.8 || ^17.0 || ^18.0", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>=16.14.0", "react-dom@>=16.6.0", "react-dom@>=16.8", "react-dom@>=16.8.0":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
