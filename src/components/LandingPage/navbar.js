@@ -90,10 +90,10 @@ const Navbar = () =>{
                     <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}>
                           <GoogleLogin
                               onSuccess={credentialResponse => {
-                                haldleSuccessGoogle(credentialResponse)
+                                handleSuccessGoogle(credentialResponse)
                               }}
                               onError={() => {
-                                haldleFailureGoogle("error Login")
+                                handleFailureGoogle("error Login")
                               }}
                             />
                         </GoogleOAuthProvider>
