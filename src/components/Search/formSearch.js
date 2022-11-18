@@ -2,9 +2,9 @@ import React from "react";
 import FindCar from "../FindCar";
 // import ListCar from "./search";
 
-function refreshPage() {
-  window.location.reload()
-}
+// function refreshPage() {
+//   window.location.reload()
+// }
 
 class Search extends React.Component{
     constructor(pros) {
@@ -57,7 +57,7 @@ class Search extends React.Component{
                         <div className="col-md-10 mb-3">
                             <div className="row" style={{ fontSize:"14px" }}>
                             <div className="col-md-3 mb-3">
-                                <label for="tipe">Tipe Driver</label>
+                                <label htmlFor="tipe">Tipe Driver</label>
                                 <select name="tipedriver" value={this.state.value} onChange={this.handleChange} className="form-control" id="tipe-driver">
                                 <option value="" disabled selected>Pilih Driver</option>
                                 <option value="true">Dengan Driver</option>
@@ -65,15 +65,15 @@ class Search extends React.Component{
                                 </select>
                             </div>
                             <div className="col-md-3 mb-3">
-                                <label for="tgl">Tanggal</label>
+                                <label htmlFor="tgl">Tanggal</label>
                                 <input type="date" className="form-control" name="tanggal" value={this.state.tanggal} onChange={this.handleChange} id="tanggal"/>
                             </div>
                             <div className="col-md-3 mb-3">
-                                <label for="jemput">Waktu Jemput / Ambil</label>
+                                <label htmlFor="jemput">Waktu Jemput / Ambil</label>
                                 <input type="time" className="form-control" name="waktu" value={this.state.waktu} onChange={this.handleChange} id="waktu"/>
                             </div>
                             <div className="col-md-3 mb-3">
-                                <label for="jmlh">Jumlah Penumpang (Optional)</label>
+                                <label htmlFor="jmlh">Jumlah Penumpang (Optional)</label>
                                 <input type="number" className="form-control" id="penumpang" name="jumlahpenumpang" value={this.state.jumlahpenumpang} onChange={this.handleChange} placeholder="Jumlah Penumpang"/>
                             </div>
                             </div>

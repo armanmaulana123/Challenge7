@@ -35,8 +35,8 @@ function Testi(){
                                         <Icon.StarFill style={{color:"#F9CC00"}}></Icon.StarFill>
                                     </div>
                                 </div>
-                                <p className="card-text mt-3" style={{textAlign:"left"}}>"Binar Rental Car adalah rental mobil terbaik
-                                yang pernah saya coba, mobil yang disediakan selali dalam keadaan baik."</p>
+                                <p className="card-text mt-3" style={{textAlign:"left"}}>&quot;Binar Rental Car adalah rental mobil terbaik
+                                yang pernah saya coba, mobil yang disediakan selali dalam keadaan baik.&quot;</p>
                                 <p className="card-text" style={{textAlign:"left"}}><strong>Al Farizi, Bali</strong></p>
                             </div>
                             </div>
@@ -62,9 +62,9 @@ function Testi(){
                                         <Icon.StarFill style={{color:"#F9CC00"}}></Icon.StarFill>
                                     </div>
                                 </div>
-                                <p className="card-text mt-3" style={{textAlign:"left"}}>"Mobil di Binar Rental Car selalu dalam
+                                <p className="card-text mt-3" style={{textAlign:"left"}}>&quot;Mobil di Binar Rental Car selalu dalam
                                 keadaan
-                                bersih dan harum, jadi bikin nyaman pas lagi liburan sama keluarga."</p>
+                                bersih dan harum, jadi bikin nyaman pas lagi liburan sama keluarga.&quot;</p>
                                 <p className="card-text" style={{textAlign:"left"}}><strong>Fajar, Solo</strong></p>
                             </div>
                             </div>
@@ -90,8 +90,8 @@ function Testi(){
                                         <Icon.StarFill style={{color:"#F9CC00"}}></Icon.StarFill>
                                     </div>
                                 </div>
-                                <p className="card-text mt-3" style={{textAlign:"left"}}>"Salut sama pelayanan Binar Rental Car,
-                                pelayanannya sangat cepat dan ramah, recommended pokonya."</p>
+                                <p className="card-text mt-3" style={{textAlign:"left"}}>&quot;Salut sama pelayanan Binar Rental Car,
+                                pelayanannya sangat cepat dan ramah, recommended pokonya.&quot;</p>
                                 <p className="card-text" style={{textAlign:"left"}}><strong>Dyah, Nganjuk</strong></p>
                             </div>
                             </div>

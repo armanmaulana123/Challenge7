@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import { getListCar } from '../../actions/carAction'
 import * as Icon from "react-bootstrap-icons";
-import car from '../../reducers/car';
+// import car from '../../reducers/car';
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -19,7 +19,7 @@ function getRandomInt(min, max) {
     return hasil
   }
 
-function FindCar({submit, data, jumlahpenumpang,tipedriver,tanggal,waktu}){
+function FindCar({data, jumlahpenumpang,tipedriver,tanggal,waktu}){
     const { getListCarResult, getListCarLoading, getListCarError } = useSelector((state) => state.carReducer);
     const dispatch = useDispatch()
     const jumlah = jumlahpenumpang;
@@ -46,20 +46,20 @@ function FindCar({submit, data, jumlahpenumpang,tipedriver,tanggal,waktu}){
             Date.parse(DateTime(car.availableAt)) > formdate 
             ).map((car) => {
                 return(
-                    <div className='col-md-3'>
-                <div className="card mb-3">
-                  <img src={`https://raw.githubusercontent.com/fnurhidayat/probable-garbanzo/main/public/images/${car.image.split('/')[2]}`} className="card-img-top" height={200} alt={car.manufacture}/>
-                  <div className="card-body">
-                    <p className="card-text">{car.model}</p>
-                    <h5 className="card-title" style={{fontWeight:"bold"}}>{car.rentPerDay} / Hari</h5>
-                    <p className="card-text">{car.description}</p>
-                    <p className="card-text"><Icon.People></Icon.People> {car.capacity}</p>
-                    <p className="card-text"><Icon.Gear></Icon.Gear> {car.transmission}</p>
-                    <p className="card-text"><Icon.Calendar></Icon.Calendar> {car.year}</p>
-                    <a href="#" className="btn btn-success btn-block">Pilih Mobil</a>
-                  </div>
-                </div>
-                </div>
+                    <div className='col-md-3' key={car.id}>
+                        <div className="card mb-3">
+                        <img src={`https://raw.githubusercontent.com/fnurhidayat/probable-garbanzo/main/public/images/${car.image.split('/')[2]}`} className="card-img-top" height={200} alt={car.manufacture}/>
+                        <div className="card-body">
+                            <p className="card-text">{car.model}</p>
+                            <h5 className="card-title" style={{fontWeight:"bold"}}>{car.rentPerDay} / Hari</h5>
+                            <p className="card-text">{car.description}</p>
+                            <p className="card-text"><Icon.People></Icon.People> {car.capacity}</p>
+                            <p className="card-text"><Icon.Gear></Icon.Gear> {car.transmission}</p>
+                            <p className="card-text"><Icon.Calendar></Icon.Calendar> {car.year}</p>
+                            <a href="#" className="btn btn-success btn-block">Pilih Mobil</a>
+                        </div>
+                        </div>
+                    </div>
                 )
             })
             ) : getListCarLoading ? (

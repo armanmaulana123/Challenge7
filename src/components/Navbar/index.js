@@ -1,6 +1,6 @@
-import React from "react"
-import useHistory from "react-router-dom";
-import { Navigate } from 'react-router-dom';
+import React, {useEffect, useState} from "react"
+// import useHistory from "react-router-dom";
+// import { Navigate } from 'react-router-dom';
 import { GoogleLogin } from 'react-google-login';
 
 async function doLoginWithGoogle(token) {
@@ -19,10 +19,10 @@ async function doLoginWithGoogle(token) {
 }
 
 const Navbar = () =>{
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+  const [setIsLoading] = useState(false);
   const token = localStorage.getItem("token");
 
 

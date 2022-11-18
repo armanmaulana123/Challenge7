@@ -7,7 +7,7 @@ function Hero(){
             <div className="row" style={{marginTop:100}}>
                 <div className="col-lg-6 col-md-6 mb-5">
                     <div className="container">
-                        <h1 align="left">Sewa & Rental Mobil Terbaik di kawasan Lumajang</h1>
+                        <h1>Sewa & Rental Mobil Terbaik di kawasan Lumajang</h1>
                         <p className="mt-5 text-start">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga
                             terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
                         <div className="text-start">
